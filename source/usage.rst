@@ -103,7 +103,7 @@ If ‘--Classification_Usage is set to ‘True’, there will be a folder called
 
 Example Cropped Image:
 
-.. figure:: _static/Armadillo2_0.jpg
+.. figure:: _static/Armadillo2.jpg
    :align: center
 
 
