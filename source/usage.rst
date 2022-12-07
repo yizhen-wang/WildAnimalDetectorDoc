@@ -7,13 +7,13 @@ We are happy to support users running WildAnimalDetector on their own GPU or CPU
 Get WildAnimalDetector
 +++++++++++++++++++++++
 
-WildAnimalDetector source code is available `here <https://github.com/yizhen-wang/WildAnimalDetector>`_ 
+WildAnimalDetector source code is available `here <https://github.com/yizhen-wang/WildAnimalDetector>`_.
 
 
 Downloading the model
 +++++++++++++++++++++++
 
-The classification and detection models can be downloaded from `Models <https://drive.google.com/drive/folders/1GOiaRIV-OkGDGrgvCp-XvyeWbHvUVwzD?usp=sharing>`_ 
+The classification and detection models can be downloaded from `Models <https://drive.google.com/drive/folders/1GOiaRIV-OkGDGrgvCp-XvyeWbHvUVwzD?usp=sharing>`_.
 
 
 Usage Examples
