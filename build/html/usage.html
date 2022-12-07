@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usage &mdash; WildAnimalDetector v1.0.0-alpha documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Authors" href="authors.html" />
+    <link rel="prev" title="Installation" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> WildAnimalDetector
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">What is WildAnimalDetector?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#get-wildanimaldetector">Get WildAnimalDetector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#downloading-the-model">Downloading the model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage-examples">Usage Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#output-examples">Output Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WildAnimalDetector</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Usage</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/usage.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<p>We are happy to support users running WildAnimalDetector on their own GPU or CPU, but we recommend that you run WildAnimalDetector on a GPU, as running it on a CPU can be more than 10x slower.</p>
+<div class="section" id="get-wildanimaldetector">
+<h2>Get WildAnimalDetector<a class="headerlink" href="#get-wildanimaldetector" title="Permalink to this headline">¶</a></h2>
+<p>WildAnimalDetector source code is available <a class="reference external" href="https://github.com/yizhen-wang/WildAnimalDetector">here</a></p>
+</div>
+<div class="section" id="downloading-the-model">
+<h2>Downloading the model<a class="headerlink" href="#downloading-the-model" title="Permalink to this headline">¶</a></h2>
+<p>The classification and detection models can be downloaded from <a class="reference external" href="https://drive.google.com/drive/folders/1GOiaRIV-OkGDGrgvCp-XvyeWbHvUVwzD?usp=sharing">Models</a></p>
+</div>
+<div class="section" id="usage-examples">
+<h2>Usage Examples<a class="headerlink" href="#usage-examples" title="Permalink to this headline">¶</a></h2>
+<p>When using this tool run ‘python main.py -h’ or ‘python main.py –help’ to get the help information.</p>
+<p>Currently the following parameters can be used:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">--</span><span class="n">ImgPath</span>                 <span class="n">The</span> <span class="n">path</span> <span class="n">of</span> <span class="n">the</span> <span class="n">image</span> <span class="n">file</span><span class="o">.</span>
+<span class="o">--</span><span class="n">DirPath</span>                 <span class="n">The</span> <span class="n">path</span> <span class="n">of</span> <span class="n">the</span> <span class="n">image</span> <span class="nb">dir</span><span class="o">.</span>
+<span class="o">--</span><span class="n">Classification_Usage</span>    <span class="n">If</span> <span class="n">classification</span> <span class="n">model</span> <span class="n">will</span> <span class="n">be</span> <span class="n">used</span> <span class="n">to</span> <span class="n">help</span> <span class="n">detection</span><span class="o">.</span>
+<span class="o">--</span><span class="n">WBF_Usage</span>               <span class="n">If</span> <span class="n">Weighted</span><span class="o">-</span><span class="n">Boxes</span><span class="o">-</span><span class="n">Fusion</span> <span class="n">will</span> <span class="n">be</span> <span class="n">used</span> <span class="n">to</span> <span class="n">help</span> <span class="n">detection</span><span class="o">.</span>
+<span class="o">--</span><span class="n">Output_Dir</span>              <span class="n">Setup</span> <span class="n">the</span> <span class="n">path</span> <span class="n">of</span> <span class="n">output</span> <span class="n">results</span> <span class="n">you</span> <span class="n">want</span> <span class="n">to</span> <span class="n">save</span><span class="o">.</span>
+<span class="o">--</span><span class="n">Draw_Detection</span>          <span class="n">If</span> <span class="n">generating</span> <span class="n">images</span> <span class="k">with</span> <span class="n">detected</span> <span class="n">animals</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>You must offer a valid image path or the path of a folder with images, currently we only support ‘.jpg’ and ‘.JPG’ files.</p>
+<p>Here are some running commands:</p>
+<blockquote>
+<div><p>Basic running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">DirPath</span> <span class="o">&lt;</span><span class="n">Path</span> <span class="n">to</span> <span class="n">Image</span> <span class="n">Dir</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Running with draw detection output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">DirPath</span> <span class="o">&lt;</span><span class="n">Path</span> <span class="n">to</span> <span class="n">Image</span> <span class="n">Dir</span><span class="o">&gt;</span> <span class="o">--</span><span class="n">Draw_Detection</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<p>Running with classification and WBF:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">DirPath</span> <span class="o">&lt;</span><span class="n">Path</span> <span class="n">to</span> <span class="n">Image</span> <span class="n">Dir</span><span class="o">&gt;</span> <span class="o">--</span><span class="n">Draw_Detection</span> <span class="kc">True</span> <span class="o">--</span><span class="n">Classification_Usage</span> <span class="kc">True</span> <span class="o">--</span><span class="n">WBF_Usage</span> <span class="kc">True</span>
+</pre></div>
+</div>
+<p>Running with specific output folder:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span> <span class="o">--</span><span class="n">DirPath</span> <span class="o">&lt;</span><span class="n">Path</span> <span class="n">to</span> <span class="n">Image</span> <span class="n">Dir</span><span class="o">&gt;</span> <span class="o">--</span><span class="n">Output_Dir</span> <span class="o">&lt;</span><span class="n">Path</span> <span class="n">to</span> <span class="n">Output</span> <span class="n">Dir</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="output-examples">
+<h2>Output Examples<a class="headerlink" href="#output-examples" title="Permalink to this headline">¶</a></h2>
+<p>1.Normal output json file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;Armadillo7&quot;</span><span class="p">:</span> <span class="p">[</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">&quot;bbox&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">[</span>
+        <span class="mf">0.2148</span><span class="p">,</span>
+        <span class="mf">0.6778</span><span class="p">,</span>
+        <span class="mf">0.4016</span><span class="p">,</span>
+        <span class="mf">0.7958</span>
+      <span class="p">]</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;Armadillo&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;conf&quot;</span><span class="p">:</span> <span class="mf">0.9924</span> <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="s2">&quot;Armadillo2&quot;</span><span class="p">:</span> <span class="p">[</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">&quot;bbox&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">[</span>
+        <span class="mf">0.2422</span><span class="p">,</span>
+        <span class="mf">0.6505</span><span class="p">,</span>
+        <span class="mf">0.4714</span><span class="p">,</span>
+        <span class="mf">0.9097</span>
+      <span class="p">]</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;class&quot;</span><span class="p">:</span> <span class="s2">&quot;Armadillo&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;conf&quot;</span><span class="p">:</span> <span class="mf">0.9932</span> <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>2.Image with Detection result:</p>
+<p>If ‘–Draw_Detection’ is set to ‘True’, there will be a folder called ‘IMG_WITH_BBOX’ with the images with detected bounding boxes on it.</p>
+<div class="figure align-center">
+<img alt="_images/Armadillo2.jpg" src="_images/Armadillo2.jpg" />
+</div>
+<p>3.Intermedia result (cropped images) for classification model:</p>
+<p>If ‘–Classification_Usage is set to ‘True’, there will be a folder called ‘CROP_IMG’ with the cropped images detected by the detection model.</p>
+<p>Example Cropped Image:</p>
+<div class="figure align-center">
+<img alt="_images/Armadillo2_0.jpg" src="_images/Armadillo2_0.jpg" />
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="install.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="authors.html" class="btn btn-neutral float-right" title="Authors" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Yizhen Wang.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
